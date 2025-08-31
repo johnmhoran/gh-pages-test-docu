@@ -28,3 +28,35 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* 2025-08-30 Saturday 23:02:39.  Full-page Hero */
+/* .heroBanner {
+  max-width: 100% !important;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #007cf0, #00dfd8);
+  color: white;
+  text-align: center;
+} */
+
+/* 2025-08-31 Sunday 11:09:45.  Custom bullet for the hero -- change from the green vackground since it clashes with the hero's blue background. */
+.button .button-primary-mod01 .button--lg {
+    background-color: #000000;
+}
+
+/* Above removed the existing background but failed to provide any background-color. */
+.heroButtons .button--primary {
+  background-color: #000000 !important;
+  border-color: #ffffff !important;
+}
+
+/* Try this */
+.button--primary {
+  --ifm-color-primary: #222222;
+  --ifm-color-primary-dark: #111111;
+  --ifm-color-primary-darker: #000000;
+  --ifm-color-primary-light: #333333;
+}
+
+.navbar__brand {
+    color: #00ff00;
+}
