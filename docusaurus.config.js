@@ -10,9 +10,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'gh-pages-test-docu',
+//   title: 'gh-pages-test-docu',
+  title: 'PURL type JSON Schema',
   tagline: 'What me worry?',
-  favicon: 'img/favicon.ico',
+//   favicon: 'img/favicon.ico',
+  favicon: 'img/purl-favicon.ico',
+
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -34,6 +37,7 @@ const config = {
 //   projectName: 'docusaurus', // Usually your repo name.
   organizationName: 'johnmhoran',
   projectName: 'gh-pages-test-docu',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -96,20 +100,34 @@ const config = {
         //   src: 'img/logo.svg',
         // },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
+            // 2025-08-31 Sunday 17:00:40.  Not using the tutorial so no sidebar needed atm.
+        //   {
+        //     type: 'docSidebar',
+        //     sidebarId: 'tutorialSidebar',
+        //     position: 'left',
+        //     label: 'Tutorial',
+        //   },
         //   {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/docs/intro', label: 'Docs', position: 'left'},
+        //   {to: '/docs/intro', label: 'Docs', position: 'left'},
+          {to: '/docs/', label: 'Docs', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' }, // 👈 this makes Blog visible
+
+          // Right-hand dropdown
           {
-            // href: 'https://github.com/facebook/docusaurus',
-            href: 'https://github.com/johnmhoran/gh-pages-test-docu',
-            label: 'GitHub',
-            position: 'right',
+              label: 'More',
+              position: 'right',
+              items: [
+                  { label: 'GitHub', href: 'https://github.com/johnmhoran/gh-pages-test-docu' },
+                //   { label: 'Community', href: 'https://discord.com/...' }, // example
+                //   { label: 'Blog', to: '/blog' },
+              ],
           },
+
+        //   {
+        //     href: 'https://github.com/johnmhoran/gh-pages-test-docu',
+        //     label: 'GitHub',
+        //     position: 'right',
+        //   },
         ],
       },
       footer: {

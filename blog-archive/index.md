@@ -1,8 +1,7 @@
 ---
 slug: welcome
 title: Welcome
-# authors: [slorber, yangshun]
-authors: [aeneuman]
+authors: [slorber, yangshun]
 tags: [facebook, hello, docusaurus]
 ---
 
@@ -21,10 +20,9 @@ The blog post date can be extracted from filenames, such as:
 - `2019-05-30-welcome.md`
 - `2019-05-30-welcome/index.md`
 
-<!-- A blog post folder can be convenient to co-locate blog post images: -->
+A blog post folder can be convenient to co-locate blog post images:
 
-<!-- ![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg) -->
-<!-- ![banana](./imgbin-mad-tv-sam-viviano-alfred-e-neuman-magazine-head-and-neck-83WSVPrQKVV54Xyd0TQiLvmY2.jpg) -->
+![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
 
 The blog supports tags as well!
 

@@ -1,41 +1,27 @@
-# Website
+# PURL Type Schema Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This site hosts documentation and supporting resources for the **Package URL (PURL) type component JSON Schema**.
 
-## Installation
+## About
 
-```bash
-yarn
-```
+The [Package URL specification](https://github.com/package-url/purl-spec) defines a standardized way to identify and locate software packages.
+This companion schema focuses on the **`type`** component of a PURL, providing:
 
-## Local Development
+- A machine-readable JSON Schema for validating `type` values.
+- Documentation for implementers and tool authors.
+- Examples and guidance for common use cases.
 
-```bash
-yarn start
-```
+## Structure
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- **Docs** → Reference documentation and schema details.
+- **Blog** → Announcements, design discussions, and updates.
+- **GitHub** → Source of truth for the PURL specification and schema.
 
-## Build
+## Contributing
 
-```bash
-yarn build
-```
+Contributions are welcome! Please open an issue or pull request in the
+[package-url/purl-spec](https://github.com/package-url/purl-spec) repository.
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+---
 
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This documentation site is built with [Docusaurus](https://docusaurus.io/).

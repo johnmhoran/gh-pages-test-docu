@@ -23,19 +23,3 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
-
-aeneuman:
-  name: Alfred E. Neuman
-  title: Agentic Master
-  url: https://en.wikipedia.org/wiki/Alfred_E._Neuman
-  # image_url: https://comicvine.gamespot.com/a/uploads/square_medium/0/2503/314108-122835-alfred-e-neuman.jpg
-  image_url: https://cdn.imgbin.com/1/22/1/imgbin-mad-tv-sam-viviano-alfred-e-neuman-magazine-head-and-neck-83WSVPrQKVV54Xyd0TQiLvmY2.jpg
-  # page:
-  #   # customize the url of the author page at /blog/authors/<permalink>
-  #   permalink: '/all-sebastien-lorber-articles'
-  page: true
-  socials:
-    x: aeneuman
-    linkedin: aeneuman
-    github: aeneuman
-    newsletter: https://aeneuman.com
