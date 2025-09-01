@@ -60,3 +60,8 @@
 .navbar__brand {
     color: #00ff00;
 }
+
+a.a_page,
+a.a_page:visited {
+    color: #0066ff;
+}

@@ -137,8 +137,11 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                // label: 'Tutorial',
+                // to: '/docs/intro',
+                label: 'Test_Label',
+                // to: '/docs/index',
+                to: '/docs/',
               },
             ],
           },

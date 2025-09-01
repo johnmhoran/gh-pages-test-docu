@@ -10,15 +10,20 @@ export default function Home() {
       {/* Hero Section */}
       <div className={styles.fullHero}>
         <div className={styles.heroInner}>
-          <h1 className={styles.heroTitle}>Welcome to the <br />PURL type JSON Schema</h1>
+          <h1 className={styles.heroTitle}>Welcome to the <br />PURL type JSON Schema*</h1>
           <p className={styles.heroSubtitle}>
             Explore documentation, JSON Schemas, and tools for working with structured data.
           </p>
           <div className={styles.heroButtons}>
-            <Link className="button button--primary button--lg" to="/docs/intro">
+            {/* <Link className="button button--primary button--lg" to="/docs/intro"> */}
+            {/* <Link className="button button--primary button--lg" to="/docs/index"> */}
+            <Link className="button button--primary button--lg" to="/docs/">
               Get Started
             </Link>
           </div>
+          <p className={styles.heroSubtitle}>
+            * Not really -- this is just a mockup to learn a bit about Docusaurus and GH Pages.
+          </p>
         </div>
       </div>
 
@@ -27,10 +32,16 @@ export default function Home() {
         {/* Left column: schema list */}
         <div className={styles.column}>
           <h2>Available JSON Schemas</h2>
+          {/* <ul>
+            <li><Link to="/schemas/purl-test.schema.json">purl-test.schema.json</Link></li>
+            <li><Link to="/schemas/purl-type-definition.schema.json">purl-type-definition.schema.json</Link></li>
+            <li><Link to="/schemas/purl-types-index.schema.json">purl-types-index.schema.json</Link></li>
+          </ul>
+          <h2>JMH link to the GH repo</h2> */}
           <ul>
-            <li><Link to="/schemas/schema1.json">schema1.json</Link></li>
-            <li><Link to="/schemas/schema2.json">schema2.json</Link></li>
-            <li><Link to="/schemas/schema3.json">schema3.json</Link></li>
+            <li><a class="a_page" href="https://github.com/package-url/purl-spec/blob/main/schemas/purl-test.schema.json">purl-test.schema.json</a></li>
+            <li><a class="a_page" href="https://github.com/package-url/purl-spec/blob/main/schemas/purl-type-definition.schema.json">purl-type-definition.schema.json</a></li>
+            <li><a class="a_page" href="https://github.com/package-url/purl-spec/blob/main/schemas/purl-types-index.schema.json">purl-types-index.schema.json</a></li>
           </ul>
         </div>
 
@@ -38,55 +49,20 @@ export default function Home() {
         <div className={styles.column}>
           <h2>Project News</h2>
           <div className={styles.card}>
-            <h3>Release 0.2.0</h3>
-            <p>Our schemas are now aligned with the latest PURL draft.</p>
+            <h3>Release 1.0.0</h3>
+            <p>Coming soon . . .</p>
           </div>
           <div className={styles.card}>
             <h3>Community Call</h3>
-            <p>Join our next call on Sept 10th to discuss validation tools.</p>
+            <p>Join our next PURL community call on 2025-09-03 to discuss validation tools.</p>
+            <p>For the schedule of PURL community and TC54-TG2 calls, please take a look at the <a class="a_page" href="https://calendar.google.com/calendar/u/0/embed?src=c_884decde5a152902bb51a62f89550d0f3748484534f08c63792f2e654f2a7ebc@group.calendar.google.com" target="_blank'">OWASP Software Supply Chain Community Calendar</a>.</p>
           </div>
         </div>
       </div>
 
 
 
-      <div className={styles.twoColumn}>
-        {/* Left: JSON Schema links */}
-        <div className={styles.column}>
-          <h2>Available JSON Schemas</h2>
-          <ul>
-            <li><Link to="/schemas/schema1.json">schema1.json</Link></li>
-            <li><Link to="/schemas/schema2.json">schema2.json</Link></li>
-            <li><Link to="/schemas/schema3.json">schema3.json</Link></li>
-          </ul>
-        </div>
 
-        {/* Right: mixed content */}
-        <div className={styles.column}>
-          <h2>Project Highlights</h2>
-
-          {/* Card style */}
-          <div className={styles.card}>
-            <h3>Release 0.2.0</h3>
-            <p>Schemas updated to match latest PURL draft.</p>
-          </div>
-
-          {/* Callout style */}
-          <div className={styles.callout}>
-            <strong>Next Community Call:</strong> Sept 10th. Discuss validation tools.
-          </div>
-
-          {/* Image + text */}
-          <div className={styles.card}>
-            <img
-              src="/img/schema-diagram-placeholder.png"
-              alt="Schema diagram"
-              style={{ width: '100%', borderRadius: '6px', marginBottom: '0.5rem' }}
-            />
-            <p>Visual overview of how schemas relate to each other.</p>
-          </div>
-        </div>
-      </div>
 
 
 
